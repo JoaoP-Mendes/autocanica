@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>940</width>
+    <width>971</width>
     <height>580</height>
    </rect>
   </property>
@@ -574,7 +574,7 @@ image: url(:/newPrefix/silhueta-do-lado-preto-do-carro.png);</string>
   </widget>
  </widget>
  <resources>
-  <include location="img/img.qrc"/>
+  <include location="../imagens/img.qrc"/>
  </resources>
  <connections/>
 </ui>

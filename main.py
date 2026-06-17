@@ -4,7 +4,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication
 import sys
 sys.path.append("imagens")
-# import img_rc
+import img_qrc
 
 app = QApplication(sys.argv)
 widget = QtWidgets.QStackedWidget()

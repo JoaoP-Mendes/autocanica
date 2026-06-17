@@ -86,7 +86,7 @@ background-color: rgb(194, 194, 194);
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="novoclientebotao">
+  <widget class="QPushButton" name="novoservicobotao">
    <property name="geometry">
     <rect>
      <x>810</x>
@@ -827,7 +827,7 @@ background-color: rgb(194, 194, 194);
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="novoclientebotao_5">
+  <widget class="QPushButton" name="botaoiros">
    <property name="geometry">
     <rect>
      <x>730</x>
@@ -854,7 +854,7 @@ background-color: rgb(148, 148, 148);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="novoclientebotao_6">
+  <widget class="QPushButton" name="botaoircarros">
    <property name="geometry">
     <rect>
      <x>500</x>
@@ -881,7 +881,7 @@ background-color: rgb(148, 148, 148);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="novoclientebotao_7">
+  <widget class="QPushButton" name="botaoirclientes">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -908,7 +908,7 @@ background-color: rgb(148, 148, 148);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="novoclientebotao_8">
+  <widget class="QPushButton" name="botaoirinicio">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -1450,7 +1450,7 @@ font: 75 8pt &quot;System&quot;;
   </widget>
  </widget>
  <resources>
-  <include location="img/img.qrc"/>
+  <include location="../imagens/img.qrc"/>
  </resources>
  <connections/>
 </ui>

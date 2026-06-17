@@ -1,62 +1,10 @@
 from banco import conexao
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QDialog, QMainWindow
+from janelas_clientes import ListaBase
 
 widget = None
 tela_login = 0
-
-S = ["", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9"]
-
-
-
-class ListaBase(QDialog):
-    CAMPOS = []
-    BOTOES = ["alterarbotao", "excluirbotao"]
-    TABELA = ""
-    UI = ""
-    SQL = ""
-
-    def __init__(self):
-        super().__init__()
-        loadUi(self.UI, self)
-        self.ids = []
-        for i, s in enumerate(S):
-            getattr(self, f"excluirbotao{s}").clicked.connect(lambda _, x=i: self.excluir(x))
-        self.refreshbotao.clicked.connect(self.carregar)
-        self.carregar()
-
-    def _toggle(self, show, s):
-        for n in self.CAMPOS + self.BOTOES:
-            w = getattr(self, f"{n}{s}")
-            w.show() if show else w.hide()
-
-    def carregar(self):
-        [self._toggle(False, s) for s in S]
-        self.ids = []
-        cursor = conexao.cursor()
-        cursor.execute(self.SQL)
-        for i, row in enumerate(cursor.fetchall()):
-            self.ids.append(row[0])
-            s = S[i]
-            for j, campo in enumerate(self.CAMPOS):
-                getattr(self, f"{campo}{s}").setText(str(row[j + 1]))
-            self._toggle(True, s)
-        cursor.close()
-
-    def excluir(self, index):
-        if index >= len(self.ids):
-            return
-        cursor = conexao.cursor()
-        cursor.execute(f"DELETE FROM {self.TABELA} WHERE id = %s", (self.ids[index],))
-        conexao.commit()
-        cursor.close()
-        self.carregar()
-
-    def ir(self, tela_cls):
-        global widget
-        widget.addWidget(tela_cls())
-        widget.setCurrentIndex(widget.currentIndex() + 1)
-
 
 
 class Login(QDialog):
@@ -66,7 +14,8 @@ class Login(QDialog):
         self.entrarbotao.clicked.connect(self.loginfunction)
 
     def loginfunction(self):
-        email, senha = self.email.text(), self.senha.text()
+        email = self.email.text() 
+        senha = self.senha.text()
         if not email or not senha:
             return
         cursor = conexao.cursor()
@@ -96,7 +45,7 @@ class Inicio(QMainWindow):
     def _ir(self, tela_cls):
         global widget
         widget.addWidget(tela_cls())
-
+        widget.setCurrentIndex(widget.currentIndex() + 1)
 
 class Servicos(ListaBase):
     CAMPOS = ["servico", "categoria", "preco", "tempo", "status"]
@@ -106,11 +55,11 @@ class Servicos(ListaBase):
 
     def __init__(self):
         super().__init__()
-        self.novoclientebotao.clicked.connect(lambda: self.ir(Novoservico))
-        self.novoclientebotao_8.clicked.connect(lambda: widget.setCurrentIndex(tela_login + 1))
-        self.novoclientebotao_7.clicked.connect(lambda: self.ir(Clientes))
-        self.novoclientebotao_6.clicked.connect(lambda: self.ir(Carros))
-        self.novoclientebotao_5.clicked.connect(lambda: self.ir(Ordemservico))
+        self.novoservicobotao.clicked.connect(lambda: self.ir(Novoservico))
+        self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(tela_login + 1))
+        self.botaoirclientes.clicked.connect(lambda: self.ir(Clientes))
+        self.botaoircarros.clicked.connect(lambda: self.ir(Carros))
+        self.botaoiros.clicked.connect(lambda: self.ir(Ordemservico))
 
 
 class Novoservico(QDialog):
@@ -121,14 +70,17 @@ class Novoservico(QDialog):
         self.cancelarbotao.clicked.connect(lambda: widget.setCurrentIndex(widget.currentIndex() - 1))
 
     def salvar(self):
-        nome      = self.nomeservico.text()
+        nome = self.nomeservico.text()
         categoria = self.categoriaservico.currentText()
         descricao = self.descricaoservico.text()
-        status    = self.ativosn.currentText()
-        preco     = self.precoservico.text()
-        tempo     = self.temposervico.text()
+        status = self.ativosn.currentText()
+        preco = self.precoservico.text()
+        tempo  = self.temposervico.text()
+
+
         if not nome or not preco:
             return
+        
         cursor = conexao.cursor()
         cursor.execute(
             "INSERT INTO servicos (nome, categoria, descricao, status, preco, tempo_estimado) VALUES (%s,%s,%s,%s,%s,%s)",
@@ -144,13 +96,14 @@ class Ordemservico(ListaBase):
     UI = "telas/ordemservico.ui"
     SQL = "SELECT id, cpf_cliente, placa_veiculo, placa_veiculo, valor_total, status FROM ordemservico LIMIT 9"
 
+
     def __init__(self):
         super().__init__()
-        self.novoclientebotao.clicked.connect(lambda: self.ir(Novaordemservico))
-        self.novoclientebotao_8.clicked.connect(lambda: widget.setCurrentIndex(tela_login + 1))
-        self.novoclientebotao_7.clicked.connect(lambda: self.ir(Clientes))
-        self.novoclientebotao_6.clicked.connect(lambda: self.ir(Carros))
-        self.novoclientebotao_5.clicked.connect(lambda: self.ir(Servicos))
+        self.novoosbotao.clicked.connect(lambda: self.ir(Novaordemservico))
+        self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(tela_login + 1))
+        self.botaoirclientes.clicked.connect(lambda: self.ir(Clientes))
+        self.botaoircarros.clicked.connect(lambda: self.ir(Carros))
+        self.botaoirservicos.clicked.connect(lambda: self.ir(Servicos))
 
 class Novaordemservico(QDialog):
     def __init__(self):
@@ -160,13 +113,15 @@ class Novaordemservico(QDialog):
         self.cancelarbotao.clicked.connect(lambda: widget.setCurrentIndex(widget.currentIndex() - 1))
 
     def salvar(self):
-        cpf        = self.cpfcliente.text()
-        placa      = self.placaveiculo.text()
-        problema   = self.descricaoservico.text()
-        servicos   = self.descricaoservico_2.text()
+        cpf = self.cpfcliente.text()
+        placa = self.placaveiculo.text()
+        problema = self.descricaoservico.text()
+        servicos = self.descricaoservico_2.text()
         dataentrada = self.dataentrada.date().toString("yyyy-MM-dd")
-        datasaida  = self.datasaida.date().toString("yyyy-MM-dd")
-        status     = self.comboBox.currentText()
+        datasaida = self.datasaida.date().toString("yyyy-MM-dd")
+        status  = self.comboBox.currentText()
+
+
         if not cpf or not placa:
             return
         cursor = conexao.cursor()
@@ -178,5 +133,4 @@ class Novaordemservico(QDialog):
         cursor.close()
         widget.setCurrentIndex(widget.currentIndex() - 1)
 
-# ──────────────────────────────────────────────
-from janelas_clientes import Clientes, Carros  # 
+from janelas_clientes import Clientes, Carros  

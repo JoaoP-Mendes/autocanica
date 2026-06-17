@@ -82,7 +82,7 @@ class Clientes(ListaBase):
         from janelas import tela_login
         return tela_login + 1
 
-    def _ir_servicos(self):
+    def _ir_servicos(self, nome):
         import janelas
         self.ir(getattr(janelas, nome))
 
@@ -125,24 +125,25 @@ class Carros(ListaBase):
 
     def __init__(self):
         super().__init__()
-        self.novoclientebotao.clicked.connect(lambda: self.ir(Novocarro))
-        self.refreshbotao.clicked.connect(self.carregar)
-        self.novoclientebotao_8.clicked.connect(lambda: self._ir_inicio())
-        self.novoclientebotao_7.clicked.connect(lambda: self.ir(Clientes))
-        self.novoclientebotao_6.clicked.connect(lambda: self._ir_servicos())
-        self.novoclientebotao_5.clicked.connect(lambda: self._ir_os())
+
+        #self.refreshbotao.clicked.connect(self.carregar)
+        self.novocarrobotao.clicked.connect(lambda: self.ir(Novocarro))
+        self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(self._ir_inicio()))
+        self.botaoirclientes.clicked.connect(lambda: self.ir(Clientes))
+        self.botaoirservicos.clicked.connect(lambda: self._ir_servicos("Servicos"))
+        self.botaoiros.clicked.connect(lambda: self._ir_servicos("Ordemservico"))
 
     def _ir_inicio(self):
         from janelas import tela_login
-        widget.setCurrentIndex(tela_login + 1)
+        return tela_login + 1
 
-    def _ir_servicos(self):
-        from janelas import Servicos
-        self.ir(Servicos)
+    def _ir_servicos(self, nome):
+        import janelas
+        self.ir(getattr(janelas, nome))
 
-    def _ir_os(self):
-        from janelas import Ordemservico
-        self.ir(Ordemservico)
+    # def _ir_os(self):
+    #     from janelas import Ordemservico
+    #     self.ir(Ordemservico)
 
 
 class Novocarro(QDialog):
@@ -153,7 +154,9 @@ class Novocarro(QDialog):
         self.cancelarbotao.clicked.connect(lambda: widget.setCurrentIndex(widget.currentIndex() - 1))
 
     def salvar(self):
-        cpf, placa = self.cpfcliente.text(), self.placacarro.text()
+        cpf = self.cpfcliente.text() 
+        placa = self.placacarro.text()
+
         if not cpf or not placa:
             return
         cursor = conexao.cursor()

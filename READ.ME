@@ -2,6 +2,10 @@
 **Sistema de Gerenciamento de Oficina Mecânica**  
 Repositório: github.com/JoaoP-Mendes/autocanica
 
+Email acesso: adm1@email.com
+senha acesso: 1234
+
+
 ---
 
 ## Descrição
@@ -37,6 +41,29 @@ Script de criação: `autocanica.sql`
 
 ---
 
+
+## Configuração de ícones (recursos Qt)
+
+O projeto usa um arquivo de recursos Qt (`imagens/img.qrc`) para os ícones dos botões.
+Antes de rodar o sistema pela primeira vez, gere o módulo Python a partir dele:
+
+\```bash
+cd imagens
+python -m PyQt5.pyrcc_main img.qrc -o img_qrc.py
+cd ..
+\```
+
+Isso cria `imagens/img_qrc.py`, que é importado em `main.py`. Esse arquivo gerado
+não precisa (e não deve) ser comitado no Git — adicione `img_qrc.py` ao `.gitignore`.
+
+## Como rodar
+
+\```bash
+python main.py
+\```
+
+
+---
 ## Como executar
 
 ```bash
