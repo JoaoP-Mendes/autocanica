@@ -349,8 +349,11 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="cpfcliente">
@@ -362,8 +365,11 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="telefonecliente">
@@ -375,8 +381,11 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="statuscliente">
@@ -388,424 +397,11 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_2">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_2">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_2">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_2">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_3">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_3">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_3">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_4">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_4">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_4">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_4">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_5">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_5">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_5">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_5">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_6">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_6">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_6">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_6">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_7">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_7">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_7">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_7">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_8">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_8">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_8">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_8">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cpfcliente_9">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_9">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="statuscliente_9">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="telefonecliente_9">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -950,6 +546,10 @@ background-color: rgb(148, 148, 148);</string>
    <property name="text">
     <string/>
    </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
   </widget>
   <widget class="QPushButton" name="excluirbotao">
    <property name="geometry">
@@ -967,7 +567,938 @@ background-color: rgb(148, 148, 148);</string>
    <property name="text">
     <string/>
    </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
   </widget>
+  <widget class="QLabel" name="telefonecliente_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_2">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>230</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_2">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>230</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_3">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>280</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_3">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_3">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>280</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_4">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_4">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>330</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_4">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_4">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>330</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_5">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_5">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>380</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_5">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_5">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>380</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_6">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>430</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_6">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>430</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_7">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_7">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>480</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_7">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_7">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>480</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_8">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_8">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_8">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>530</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_8">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_8">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>530</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_8">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefonecliente_9">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cpfcliente_9">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_9">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>570</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statuscliente_9">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_9">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>570</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_9">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>novoclientebotao</zorder>
+  <zorder>refreshbotao</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_20</zorder>
+  <zorder>label_21</zorder>
+  <zorder>label_22</zorder>
+  <zorder>label_23</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>line_4</zorder>
+  <zorder>line_5</zorder>
+  <zorder>line_6</zorder>
+  <zorder>line_7</zorder>
+  <zorder>line_8</zorder>
+  <zorder>nomecliente</zorder>
+  <zorder>cpfcliente</zorder>
+  <zorder>telefonecliente</zorder>
+  <zorder>statuscliente</zorder>
+  <zorder>label_5</zorder>
+  <zorder>botaoiros</zorder>
+  <zorder>botaoirservicos</zorder>
+  <zorder>botaoircarros</zorder>
+  <zorder>botaoirinicio</zorder>
+  <zorder>alterarbotao</zorder>
+  <zorder>excluirbotao</zorder>
+  <zorder>telefonecliente_2</zorder>
+  <zorder>cpfcliente_2</zorder>
+  <zorder>alterarbotao_2</zorder>
+  <zorder>statuscliente_2</zorder>
+  <zorder>excluirbotao_2</zorder>
+  <zorder>nomecliente_2</zorder>
+  <zorder>telefonecliente_3</zorder>
+  <zorder>cpfcliente_3</zorder>
+  <zorder>alterarbotao_3</zorder>
+  <zorder>statuscliente_3</zorder>
+  <zorder>excluirbotao_3</zorder>
+  <zorder>nomecliente_3</zorder>
+  <zorder>telefonecliente_4</zorder>
+  <zorder>cpfcliente_4</zorder>
+  <zorder>alterarbotao_4</zorder>
+  <zorder>statuscliente_4</zorder>
+  <zorder>excluirbotao_4</zorder>
+  <zorder>nomecliente_4</zorder>
+  <zorder>telefonecliente_5</zorder>
+  <zorder>cpfcliente_5</zorder>
+  <zorder>alterarbotao_5</zorder>
+  <zorder>statuscliente_5</zorder>
+  <zorder>excluirbotao_5</zorder>
+  <zorder>nomecliente_5</zorder>
+  <zorder>telefonecliente_6</zorder>
+  <zorder>cpfcliente_6</zorder>
+  <zorder>alterarbotao_6</zorder>
+  <zorder>statuscliente_6</zorder>
+  <zorder>excluirbotao_6</zorder>
+  <zorder>nomecliente_6</zorder>
+  <zorder>telefonecliente_7</zorder>
+  <zorder>cpfcliente_7</zorder>
+  <zorder>alterarbotao_7</zorder>
+  <zorder>statuscliente_7</zorder>
+  <zorder>excluirbotao_7</zorder>
+  <zorder>nomecliente_7</zorder>
+  <zorder>telefonecliente_8</zorder>
+  <zorder>cpfcliente_8</zorder>
+  <zorder>alterarbotao_8</zorder>
+  <zorder>statuscliente_8</zorder>
+  <zorder>excluirbotao_8</zorder>
+  <zorder>nomecliente_8</zorder>
+  <zorder>telefonecliente_9</zorder>
+  <zorder>cpfcliente_9</zorder>
+  <zorder>alterarbotao_9</zorder>
+  <zorder>statuscliente_9</zorder>
+  <zorder>excluirbotao_9</zorder>
+  <zorder>nomecliente_9</zorder>
  </widget>
  <resources>
   <include location="../imagens/img.qrc"/>

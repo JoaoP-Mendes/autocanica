@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17/06/2026 às 04:26
+-- Tempo de geração: 17/06/2026 às 19:00
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -58,6 +58,15 @@ CREATE TABLE `carros` (
   `observacoes` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `carros`
+--
+
+INSERT INTO `carros` (`id`, `cpf_cliente`, `placa`, `marca`, `ano`, `modelo`, `cor`, `combustivel`, `km_atual`, `observacoes`) VALUES
+(1, '111.222.333-44', 'ABC1D23', 'Fiat', '2018', 'Argo', 'Branco', 'Flex', '45000', ''),
+(2, '222.333.444-55', 'XYZ9E87', 'Chevrolet', '2020', 'Onix', 'Preto', 'Flex', '22000', ''),
+(3, '333.444.555-66', 'QWE4R56', 'Honda', '2015', 'Civic', 'Cinza', 'Flex', '78000', 'Revisão atrasada');
+
 -- --------------------------------------------------------
 
 --
@@ -75,6 +84,15 @@ CREATE TABLE `clientes` (
   `status` varchar(10) DEFAULT 'Ativo',
   `observacoes` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nome`, `cpf`, `telefone`, `email`, `cep`, `cidade`, `status`, `observacoes`) VALUES
+(5, 'João Silva', '111.222.333-44', '(67) 99111-2222', 'joao.silva@email.com', '79000-000', 'Campo Grande', 'Ativo', ''),
+(6, 'Maria Oliveira', '222.333.444-55', '(67) 99222-3333', 'maria.oliveira@email.com', '79001-000', 'Campo Grande', 'Ativo', ''),
+(7, 'Carlos Souza', '333.444.555-66', '(67) 99333-4444', 'carlos.souza@email.com', '79002-000', 'Dourados', 'Inativo', 'Cliente antigo');
 
 -- --------------------------------------------------------
 
@@ -94,6 +112,15 @@ CREATE TABLE `ordemservico` (
   `status` varchar(20) DEFAULT 'Aberta'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `ordemservico`
+--
+
+INSERT INTO `ordemservico` (`id`, `cpf_cliente`, `placa_veiculo`, `problema_relatado`, `servicos`, `data_entrada`, `previsao_entrega`, `valor_total`, `status`) VALUES
+(1, '111.222.333-44', 'ABC1D23', 'Ruído ao frear', 'Troca de óleo, Revisão freios', '2026-06-10', '2026-06-12', 280.00, 'Em execucao'),
+(2, '222.333.444-55', 'XYZ9E87', 'Carro puxando para o lado', 'Alinhamento e balanceamento', '2026-06-14', '2026-06-15', 90.00, 'Aberta'),
+(3, '333.444.555-66', 'QWE4R56', 'Painel com luzes acesas', 'Revisão elétrica', '2026-06-15', '2026-06-17', 150.00, 'Concluida');
+
 -- --------------------------------------------------------
 
 --
@@ -109,6 +136,15 @@ CREATE TABLE `servicos` (
   `preco` decimal(10,2) NOT NULL,
   `tempo_estimado` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `servicos`
+--
+
+INSERT INTO `servicos` (`id`, `nome`, `categoria`, `descricao`, `status`, `preco`, `tempo_estimado`) VALUES
+(1, 'Troca de óleo', 'Mecanica', 'Troca de óleo e filtro', 'Ativo', 120.00, '30 min'),
+(2, 'Alinhamento e balanceamento', 'Mecanica', 'Alinhamento e balanceamento das 4 rodas', 'Ativo', 90.00, '1 hora'),
+(3, 'Revisão elétrica', 'Eletrica', 'Diagnóstico completo do sistema elétrico', 'Ativo', 150.00, '2 horas');
 
 --
 -- Índices para tabelas despejadas
@@ -157,25 +193,25 @@ ALTER TABLE `servicos`
 -- AUTO_INCREMENT de tabela `carros`
 --
 ALTER TABLE `carros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `ordemservico`
 --
 ALTER TABLE `ordemservico`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `servicos`
 --
 ALTER TABLE `servicos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para tabelas despejadas

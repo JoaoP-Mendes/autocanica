@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>981</width>
-    <height>687</height>
+    <height>680</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,7 +56,7 @@ image: url(:/newPrefix/servico-tecnico.png);</string>
     <rect>
      <x>80</x>
      <y>30</y>
-     <width>161</width>
+     <width>181</width>
      <height>41</height>
     </rect>
    </property>
@@ -65,7 +65,7 @@ image: url(:/newPrefix/servico-tecnico.png);</string>
 </string>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SERVIÇOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ORDEM DE SERVIÇO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -349,8 +349,12 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="nomecarro">
@@ -362,8 +366,12 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="placaveiculo">
@@ -375,8 +383,12 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="valortotal">
@@ -388,424 +400,12 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_2">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>230</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_2">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_2">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>230</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_2">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>230</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_3">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_3">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>280</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_3">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>280</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_4">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_4">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>330</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_4">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>330</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_4">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>330</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_5">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_5">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>380</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_5">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>380</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_5">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>380</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_6">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_6">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>430</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_6">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>430</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_6">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>430</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_7">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_7">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>480</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_7">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>480</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_7">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>480</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_8">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_8">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>530</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_8">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>530</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_8">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>530</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecarro_9">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="nomecliente_9">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>570</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="valortotal_9">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>570</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="placaveiculo_9">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>570</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -952,7 +552,7 @@ background-color: rgb(148, 148, 148);</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
    </property>
   </widget>
   <widget class="QPushButton" name="excluirbotao">
@@ -973,343 +573,7 @@ background-color: rgb(148, 148, 148);</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_2">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>230</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_2">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>230</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_3">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>280</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_3">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>280</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_4">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>330</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_4">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>330</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_5">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>380</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_5">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>380</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_6">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>430</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_6">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>430</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_7">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>480</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_7">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>480</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_8">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>530</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_8">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>530</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="alterarbotao_9">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>570</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/alterar.png</normaloff>img/alterar.png</iconset>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="excluirbotao_9">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>570</y>
-     <width>41</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 8px;
-background-color: rgb(148, 148, 148);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>img/excluir.png</normaloff>img/excluir.png</iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label_24">
@@ -1339,34 +603,266 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_2">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>720</x>
      <y>230</y>
      <width>91</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>230</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>230</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_2">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>230</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>230</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>230</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_3">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>720</x>
      <y>280</y>
      <width>91</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_3">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>280</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_3">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>280</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>280</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>280</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_4">
@@ -1378,8 +874,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>330</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_4">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>330</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_4">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>330</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_4">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>330</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_4">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>330</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_5">
@@ -1391,8 +1001,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>380</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_5">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>380</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_5">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>380</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_5">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>380</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_5">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>380</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_6">
@@ -1404,8 +1128,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>430</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_6">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>430</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_6">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>430</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_6">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>430</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>430</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_7">
@@ -1417,8 +1255,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>480</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_7">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>480</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_7">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>480</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_7">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>480</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_7">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>480</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_8">
@@ -1430,8 +1382,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_8">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>530</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_8">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>530</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_8">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_8">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>530</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_8">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>530</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_8">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>530</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="status_9">
@@ -1443,8 +1509,122 @@ font: 75 8pt &quot;System&quot;;
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placaveiculo_9">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>570</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alterarbotao_9">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>570</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/alterar.png</normaloff>../imagens/alterar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecliente_9">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excluirbotao_9">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>570</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(148, 148, 148);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagens/excluir.png</normaloff>../imagens/excluir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valortotal_9">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>570</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomecarro_9">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>570</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

@@ -34,6 +34,8 @@ class ListaBase(QDialog):
         cursor = conexao.cursor()
         cursor.execute(self.SQL)
         for i, row in enumerate(cursor.fetchall()):
+            if i >= len(self.S_DISPONIVEIS):
+                break
             self.ids.append(row[0])
             s = self.S_DISPONIVEIS[i]
             for j, campo in enumerate(self.CAMPOS):
@@ -56,22 +58,16 @@ class ListaBase(QDialog):
         widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
-
-
-
 class Clientes(ListaBase):
     CAMPOS = ["nomecliente", "cpfcliente", "telefonecliente", "statuscliente"]
     BOTOES = ["alterarbotao", "excluirbotao"]
     TABELA = "clientes"
     UI = "telas/clientes.ui"
     SQL = "SELECT id, nome, cpf, telefone, status FROM clientes LIMIT 9"
-    S_DISPONIVEIS = [""]
+    S_DISPONIVEIS = S
 
     def __init__(self):
         super().__init__()
-        self.refreshbotao.clicked.connect(self.carregar)
-
-
         self.novoclientebotao.clicked.connect(lambda: self.ir(Novocliente))
         self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(self._ir_inicio()))
         self.botaoircarros.clicked.connect(lambda: self.ir(Carros))
@@ -85,10 +81,6 @@ class Clientes(ListaBase):
     def _ir_servicos(self, nome):
         import janelas
         self.ir(getattr(janelas, nome))
-
-    # def _ir_os(self):
-    #     from janelas import Ordemservico
-    #     self.ir(Ordemservico)
 
 
 class Novocliente(QDialog):
@@ -104,7 +96,7 @@ class Novocliente(QDialog):
 
         if not nome or not cpf:
             return
-        
+
         cursor = conexao.cursor()
         cursor.execute(
             "INSERT INTO clientes (nome, cpf, telefone, email, cep, cidade, status, observacoes) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
@@ -121,12 +113,10 @@ class Carros(ListaBase):
     TABELA = "carros"
     UI = "telas/carros.ui"
     SQL = "SELECT id, marca, placa, ano, cpf_cliente FROM carros LIMIT 9"
-    S_DISPONIVEIS = [""] 
+    S_DISPONIVEIS = S
 
     def __init__(self):
         super().__init__()
-
-        #self.refreshbotao.clicked.connect(self.carregar)
         self.novocarrobotao.clicked.connect(lambda: self.ir(Novocarro))
         self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(self._ir_inicio()))
         self.botaoirclientes.clicked.connect(lambda: self.ir(Clientes))
@@ -141,10 +131,6 @@ class Carros(ListaBase):
         import janelas
         self.ir(getattr(janelas, nome))
 
-    # def _ir_os(self):
-    #     from janelas import Ordemservico
-    #     self.ir(Ordemservico)
-
 
 class Novocarro(QDialog):
     def __init__(self):
@@ -154,7 +140,7 @@ class Novocarro(QDialog):
         self.cancelarbotao.clicked.connect(lambda: widget.setCurrentIndex(widget.currentIndex() - 1))
 
     def salvar(self):
-        cpf = self.cpfcliente.text() 
+        cpf = self.cpfcliente.text()
         placa = self.placacarro.text()
 
         if not cpf or not placa:
