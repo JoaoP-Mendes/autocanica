@@ -11,27 +11,31 @@ class ListaBase(QDialog):
     BOTOES = ["alterarbotao", "excluirbotao"]
     TABELA = ""
     UI = ""
+    SQL = ""
+    S_DISPONIVEIS = S
 
     def __init__(self):
         super().__init__()
         loadUi(self.UI, self)
         self.ids = []
-        for i, s in enumerate(S):
+        for i, s in enumerate(self.S_DISPONIVEIS):
             getattr(self, f"excluirbotao{s}").clicked.connect(lambda _, x=i: self.excluir(x))
+        self.refreshbotao.clicked.connect(self.carregar)
         self.carregar()
 
     def _toggle(self, show, s):
         for n in self.CAMPOS + self.BOTOES:
-            getattr(self, f"{n}{s}").show() if show else getattr(self, f"{n}{s}").hide()
+            w = getattr(self, f"{n}{s}")
+            w.show() if show else w.hide()
 
     def carregar(self):
-        [self._toggle(False, s) for s in S]
+        [self._toggle(False, s) for s in self.S_DISPONIVEIS]
         self.ids = []
         cursor = conexao.cursor()
         cursor.execute(self.SQL)
         for i, row in enumerate(cursor.fetchall()):
             self.ids.append(row[0])
-            s = S[i]
+            s = self.S_DISPONIVEIS[i]
             for j, campo in enumerate(self.CAMPOS):
                 getattr(self, f"{campo}{s}").setText(str(row[j + 1]))
             self._toggle(True, s)
@@ -46,42 +50,45 @@ class ListaBase(QDialog):
         cursor.close()
         self.carregar()
 
-    def ir(self, tela):
+    def ir(self, tela_cls):
         global widget
-        widget.addWidget(tela())
+        widget.addWidget(tela_cls())
         widget.setCurrentIndex(widget.currentIndex() + 1)
 
-    def voltar(self):
-        global widget
-        widget.setCurrentIndex(widget.currentIndex() - 1)
+
+
 
 
 class Clientes(ListaBase):
     CAMPOS = ["nomecliente", "cpfcliente", "telefonecliente", "statuscliente"]
+    BOTOES = ["alterarbotao", "excluirbotao"]
     TABELA = "clientes"
     UI = "telas/clientes.ui"
     SQL = "SELECT id, nome, cpf, telefone, status FROM clientes LIMIT 9"
+    S_DISPONIVEIS = [""]
 
     def __init__(self):
         super().__init__()
-        self.novoclientebotao.clicked.connect(lambda: self.ir(Novocliente))
         self.refreshbotao.clicked.connect(self.carregar)
-        self.novoclientebotao_8.clicked.connect(lambda: self._ir_inicio())
-        self.novoclientebotao_7.clicked.connect(lambda: self.ir(Carros))
-        self.novoclientebotao_6.clicked.connect(lambda: self._ir_servicos())
-        self.novoclientebotao_5.clicked.connect(lambda: self._ir_os())
+
+
+        self.novoclientebotao.clicked.connect(lambda: self.ir(Novocliente))
+        self.botaoirinicio.clicked.connect(lambda: widget.setCurrentIndex(self._ir_inicio()))
+        self.botaoircarros.clicked.connect(lambda: self.ir(Carros))
+        self.botaoirservicos.clicked.connect(lambda: self._ir_servicos("Servicos"))
+        self.botaoiros.clicked.connect(lambda: self._ir_servicos("Ordemservico"))
 
     def _ir_inicio(self):
         from janelas import tela_login
-        widget.setCurrentIndex(tela_login + 1)
+        return tela_login + 1
 
     def _ir_servicos(self):
-        from janelas import Servicos
-        self.ir(Servicos)
+        import janelas
+        self.ir(getattr(janelas, nome))
 
-    def _ir_os(self):
-        from janelas import Ordemservico
-        self.ir(Ordemservico)
+    # def _ir_os(self):
+    #     from janelas import Ordemservico
+    #     self.ir(Ordemservico)
 
 
 class Novocliente(QDialog):
@@ -92,9 +99,12 @@ class Novocliente(QDialog):
         self.cancelarbotao.clicked.connect(lambda: widget.setCurrentIndex(widget.currentIndex() - 1))
 
     def salvar(self):
-        nome, cpf = self.nome.text(), self.cpf.text()
+        nome = self.nome.text()
+        cpf = self.cpf.text()
+
         if not nome or not cpf:
             return
+        
         cursor = conexao.cursor()
         cursor.execute(
             "INSERT INTO clientes (nome, cpf, telefone, email, cep, cidade, status, observacoes) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
@@ -107,9 +117,11 @@ class Novocliente(QDialog):
 
 class Carros(ListaBase):
     CAMPOS = ["carro", "placacarro", "anocarro", "statuscliente"]
+    BOTOES = ["alterarbotao", "excluirbotao"]
     TABELA = "carros"
     UI = "telas/carros.ui"
     SQL = "SELECT id, marca, placa, ano, cpf_cliente FROM carros LIMIT 9"
+    S_DISPONIVEIS = [""] 
 
     def __init__(self):
         super().__init__()
