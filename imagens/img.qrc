@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>servico-tecnico.png</file>
+    <file>simbolo-do-dolar.png</file>
+    <file>silhueta-do-lado-preto-do-carro.png</file>
+    <file>atualizar.png</file>
+    <file>aviso.png</file>
+    <file>botao-adicionar.png</file>
+    <file>carro icon.png</file>
+    <file>correto.png</file>
+    <file>entrar.png</file>
+    <file>lar.png</file>
+    <file>pessoa.png</file>
+    <file>seta-direita.png</file>
+    <file>verificacao-da-lista-da-area-de-transferencia.png</file>
+    <file>atualizar.png</file>
+  </qresource>
+</RCC>
